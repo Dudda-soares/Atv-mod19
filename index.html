@@ -8,28 +8,116 @@
     <link rel="stylesheet" href="./build/main.css">
 </head>
 <body>
-    <div class="produtos">
-        <div class="produto">
-            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
-            <h4 class="produto__nome">Nome do produto</h4>
-            <p class="produto__descricao">
-                Descrição do produto
-            </p>
-        </div>
-        <div class="produto em-destaque">
-            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
-            <h4 class="produto__nome">Nome do produto</h4>
-            <p class="produto__descricao">
-                Descrição do produto
-            </p>
-        </div>
-        <div class="produto">
-            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
-            <h4 class="produto__nome">Nome do produto</h4>
-            <p class="produto__descricao">
-                Descrição do produto
-            </p>
+    <div id="header">
+        <div class="container">
+            <h1 class="title"> Café & Prosa </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="title__link" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="title__link" href="#">Produtos</a>
+                    </li>
+                    <li>
+                        <a class="title__link" href="#">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
     </div>
+    <section class="sobre-a-loja">
+        <div class="container">
+            <img class="home__img" src="./img/street-cafe-4472312_1280.jpg" alt="">
+            <div class="home">
+              
+                <h1 class="home__title">Sobre a loja</h1>
+            <p class="home__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem omnis laborum temporibus odio magnam fuga, placeat autem rem quia veniam repellat quidem dicta vero corrupti aspernatur animi numquam reiciendis molestiae.
+
+            </p>
+            </div>
+            
+        </div>  
+    </section>
+    <section class="secao-principal">
+        <div class="container">
+            <h1 class="subtitulo">Produtos</h1>
+            <div class="produtos">
+                <div class="produto">
+                    <img class="produto__imagem" src="./img/coffee-2139592_640.jpg">
+                    <h4 class="produto__nome">Nome do produto</h4>
+                    <p class="produto__descricao">
+                        Descrição do produto
+                    </p>
+                </div>
+                <div class="produto produto__em--destaque">
+                    <img class="produto__imagem" src="./img/coffee-4618705_640.jpg">
+                    <h4 class="produto__nome">Nome do produto</h4>
+                    <p class="produto__descricao">
+                        Descrição do produto
+                    </p>
+                </div>
+                <div class="produto">
+                    <img class="produto__imagem" src="./img/coffee-5589036_640.jpg">
+                    <h4 class="produto__nome">Nome do produto</h4>
+                    <p class="produto__descricao">
+                        Descrição do produto
+                    </p>
+                </div>
+                <div class="produto">
+                    <img class="produto__imagem" src="./img/coffee-5589036_640.jpg">
+                    <h4 class="produto__nome">Nome do produto</h4>
+                    <p class="produto__descricao">
+                        Descrição do produto
+                    </p>
+                </div>
+                <div class="produto">
+                    <img class="produto__imagem" src="./img/coffee-5589036_640.jpg">
+                    <h4 class="produto__nome">Nome do produto</h4>
+                    <p class="produto__descricao">
+                        Descrição do produto
+                    </p>
+                </div>
+                <div class="produto">
+                    <img class="produto__imagem" src="./img/coffee-5589036_640.jpg">
+                    <h4 class="produto__nome">Nome do produto</h4>
+                    <p class="produto__descricao">
+                        Descrição do produto
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="fale-conosco" class="container">
+        <div class="contato">
+            <form class="form">
+                <h2 class="form__title">Entre em contato</h2>
+                <label class="form__label" for="nome">Seu nome:</label>
+                <input class="form__input" type="text" name="nome" />
+                <label for="email"class="form__label">Seu e-mail </label>
+                <input id="email" type="email" class="form__input">
+                <label for="mensagem"class="form__label">Sua Mensagem:</label>
+                <textarea  id="mensagem" class="form__input"></textarea>
+                <div class="form__check">
+                    <input class="form__check-action" type="checkbox" id="aceito-termos">
+                    <label class="form__termos" for="aceito-termos">Li e concordo com os termos do site</label>
+                    
+                </div>
+                <button class="form__btn">Enviar</button>
+
+            </form>  
+        </div>
+    </section>
+    <footer class="rodape" >
+        <div class="container"> 
+            <p>
+               2025 &copy; Eduarda Soares - Todos os direitos Reservados
+            </p>
+        </div>
+          
+    </footer>
+   
 </body>
 </html>

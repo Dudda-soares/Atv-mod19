@@ -4,33 +4,126 @@
   font-family: sans-serif;
 }
 
-.produtos {
-  max-width: 640px;
+.container {
+  max-width: 1024px;
   width: 100%;
-  margin: 56px auto;
+  margin: 0 auto;
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header li {
+  display: inline;
+  margin-left: 8px;
+}
+
+#header {
+  background-color: hsla(313, 62%, 49%, 0.733);
+}
+#header .title {
+  margin: 18px 0;
+  color: #eee;
+}
+#header .title__link {
+  text-decoration: none;
+  color: #eee;
+  border: 1px solid black;
+  padding: 6px;
+  border-radius: 9px;
+}
+
+.sobre-a-loja {
+  background-color: aqua;
+}
+.sobre-a-loja .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sobre-a-loja .home {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+.sobre-a-loja .home__img {
+  max-width: 590px;
+  width: 55%;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.secao-principal {
+  padding: 30px;
+  margin-top: 20px;
+  background-color: aquamarine;
+}
+.secao-principal .produtos {
+  max-width: 800px;
+  width: 100%;
+  margin: 45px auto;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-column-gap: 1%;
 }
-
-/* bloco */
-.produto-imagem { /* elemento */
+.secao-principal .produto {
+  margin-bottom: 30px;
+  border: 1px solid black;
+  padding: 12px;
+  background-color: #eee;
+  cursor: pointer;
+  /* bloco */
+}
+.secao-principal .produto__imagem { /* elemento */
   width: 100%;
 }
-
-.produto-nome { /* elemento */
+.secao-principal .produto__nome { /* elemento */
   font-size: 1.2em;
   margin: 8px 0;
 }
-
-.produto-descricao { /* elemento */
+.secao-principal .produto__descricao { /* elemento */
   color: gray;
 }
-
-.em-destaque { /* modificador */
+.secao-principal .produto__em--destaque { /* modificador */
   border: 2px solid rgb(245, 216, 53);
   padding: 8px;
   background-color: #ffff42;
+}
+
+#fale-conosco {
+  display: flex;
+  justify-content: center;
+}
+
+.contato {
+  width: 30%;
+  border: 1px solid;
+  display: flex;
+  padding: 16px;
+  margin: 20px;
+  height: 430px;
+}
+.contato .form {
+  display: grid;
+  padding: 20px;
+}
+.contato .form__label {
+  margin-top: 20px;
+}
+.contato .form__check {
+  margin-top: 20px;
+}
+.contato .form__btn {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.rodape {
+  background-color: #ffff42;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
