@@ -1,3 +1,12 @@
+body {
+  background-color: rgba(186, 76, 12, 0.8549019608);
+}
+
+.titleh1 {
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,23 +30,24 @@
 }
 
 #header {
-  background-color: hsla(313, 62%, 49%, 0.733);
+  background-color: #1B4E59;
 }
 #header .title {
   margin: 18px 0;
   color: #eee;
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
 }
 #header .title__link {
+  font-family: "Alike", serif;
+  font-size: 1.2em;
   text-decoration: none;
-  color: #eee;
-  border: 1px solid black;
+  color: white;
+  border: 1px solid white;
   padding: 6px;
   border-radius: 9px;
 }
 
-.sobre-a-loja {
-  background-color: aqua;
-}
 .sobre-a-loja .container {
   display: flex;
   align-items: center;
@@ -50,16 +60,26 @@
   gap: 10px;
 }
 .sobre-a-loja .home__img {
-  max-width: 590px;
+  max-width: 600px;
   width: 55%;
   margin: 20px 0;
   border-radius: 10px;
   border: 3px solid white;
 }
+.sobre-a-loja .home__txt {
+  color: white;
+  font-family: "Alike", serif;
+}
+
 .secao-principal {
   padding: 30px;
-  margin-top: 20px;
-  background-color: aquamarine;
+}
+.secao-principal .container {
+  background-color: rgba(89, 44, 40, 0.7450980392);
+  padding: 30px;
+  border-radius: 3%;
+  border: 1px solid white;
+  width: 53%;
 }
 .secao-principal .produtos {
   max-width: 800px;
@@ -73,7 +93,7 @@
   margin-bottom: 30px;
   border: 1px solid black;
   padding: 12px;
-  background-color: #eee;
+  background-color: #fffefe;
   cursor: pointer;
   /* bloco */
 }
@@ -88,23 +108,26 @@
   color: gray;
 }
 .secao-principal .produto__em--destaque { /* modificador */
-  border: 2px solid rgb(245, 216, 53);
+  border: 2px solid white;
   padding: 8px;
-  background-color: #ffff42;
+  background-color: rgba(186, 76, 12, 0.8549019608);
 }
 
 #fale-conosco {
   display: flex;
   justify-content: center;
+  width: 63%;
 }
 
 .contato {
-  width: 30%;
-  border: 1px solid;
+  background-color: rgba(89, 44, 40, 0.7450980392);
+  width: 25%;
+  border: 1px solid white;
+  border-radius: 2%;
   display: flex;
   padding: 16px;
   margin: 20px;
-  height: 430px;
+  height: 474px;
 }
 .contato .form {
   display: grid;
@@ -112,9 +135,11 @@
 }
 .contato .form__label {
   margin-top: 20px;
+  color: white;
 }
 .contato .form__check {
   margin-top: 20px;
+  color: white;
 }
 .contato .form__btn {
   margin-top: 20px;
@@ -122,8 +147,56 @@
 }
 
 .rodape {
-  background-color: #ffff42;
+  background-color: #1B4E59;
   padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #header .container {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    font-size: 0.7em;
+    padding-bottom: 18px;
+  }
+  #header li {
+    display: inline;
+    margin-top: 3px;
+  }
+  .sobre-a-loja .container {
+    display: block;
+  }
+  .sobre-a-loja .home__img {
+    max-width: 329px;
+    width: 100%;
+    margin: 20px;
+  }
+  .secao-principal {
+    padding: 1px;
+  }
+  .secao-principal .container {
+    width: 74%;
+  }
+  .secao-principal .produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1%;
+  }
+  .secao-principal__imagem { /* elemento */
+    width: 100%;
+  }
+  .secao-principal__nome { /* elemento */
+    font-size: 1em;
+    margin: 8px 0;
+  }
+  #fale-conosco {
+    display: block;
+  }
+  #fale-conosco .contato {
+    padding: 16px;
+    width: 127%;
+    height: 474px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

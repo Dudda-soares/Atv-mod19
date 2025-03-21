@@ -1,3 +1,13 @@
+@use './variaveis.scss' as v ;
+
+body{
+    background-color: v.$corSegundaria;
+}
+
+.titleh1{
+    font-family: v.$fonteTitle;
+    color: v.$cortxt;
+}
 * {
     margin: 0;
     padding: 0;
